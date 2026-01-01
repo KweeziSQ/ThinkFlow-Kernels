@@ -33,18 +33,14 @@ On a mid-range **MSI RTX 2070 Super Gaming X Trio**, these kernels achieve:
 1. Ensure you have a Turing-based GPU and [OpenAI Triton](https://github.com/openai/triton) installed:
 ```bash
 pip install triton torch
-
+```
 Copy thinkflow_kernels.py into your project directory.
 
 🚀 How to use
 
 ThinkFlow Kernels are designed to be drop-in replacements for standard Transformer layers.
 
-code
-Python
-download
-content_copy
-expand_less
+
 from thinkflow_kernels import ThinkFlowRMSNorm, ThinkFlowSwiGLU, apply_thinkflow_rope
 
 # 1. Use Optimized RMSNorm
@@ -74,8 +70,9 @@ Environment: Optimized for WSL2 (Ubuntu 22.04) and native Linux.
 
 🤝 Acknowledgments
 
-Developed as the core optimization engine for the KZ AI 2.0 Nano project. Special thanks to the Triton community for providing the tools to make high-level CUDA programming accessible.
+Developed as the core optimization engine for the KZ AI 2.0 project. Special thanks to the Triton community for providing the tools to make high-level CUDA programming accessible.
 
 📜 License
 
 MIT License. Feel free to use, modify, and distribute in your own projects.
+
