@@ -40,7 +40,7 @@ Copy thinkflow_kernels.py into your project directory.
 
 ThinkFlow Kernels are designed to be drop-in replacements for standard Transformer layers.
 
-
+```
 from thinkflow_kernels import ThinkFlowRMSNorm, ThinkFlowSwiGLU, apply_thinkflow_rope
 
 # 1. Use Optimized RMSNorm
@@ -60,6 +60,7 @@ class MLP(nn.Module):
 # 3. Apply In-place RoPE
 # xq, xk: [batch, seq_len, n_heads, head_dim]
 xq, xk = apply_thinkflow_rope(xq, xk, cos, sin)
+```
 💻 Hardware Compatibility
 
 Architecture: NVIDIA Turing (Compute Capability 7.5).
@@ -75,4 +76,5 @@ Developed as the core optimization engine for the KZ AI 2.0 project. Special tha
 📜 License
 
 MIT License. Feel free to use, modify, and distribute in your own projects.
+
 
